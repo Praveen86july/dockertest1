@@ -17,7 +17,7 @@ pipeline {
 				sh 'git commit -m "modified changes"'
 				sh 'git status'
 				sh 'git remote -v'
-				sh 'git push origin master'
+				sh 'git push -u origin master'
             }
         }
     }
