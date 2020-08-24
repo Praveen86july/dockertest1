@@ -11,10 +11,9 @@ pipeline {
             steps {
                 echo 'Hello, JDK'
                 sh 'git status'
-				sh 'git add .'
-				sh 'git commit -m "modified changes"'
 				sh 'git status'
-				sh 'git remote -v'
+				sh 'git log'
+		                sh 'git remote -v'
 				sh 'git push -u origin master'
             }
         }
